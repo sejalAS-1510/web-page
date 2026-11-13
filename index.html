@@ -1,0 +1,137 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[top=0.3in,bottom=0.3in,left=0.55in,right=0.55in]{geometry}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage[english]{babel}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.87}
+\setlist[itemize]{noitemsep, topsep=1pt, parsep=0pt, leftmargin=14pt, itemsep=0pt}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\vspace{-3pt}\titlerule\vspace{1pt}]
+\titlespacing*{\section}{0pt}{3pt}{1pt}
+
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Sejal Shinkar}}\\[2pt]
+
+Pune, Maharashtra, India \\[2pt]
+
++91 9511735932 \;|\;
+\href{mailto:sejalshinkar1510@gmail.com}{sejalshinkar1510@gmail.com}
+\;|\;
+\href{https://linkedin.com/in/sejal-shinkar}{LinkedIn}
+\;|\;
+\href{https://github.com/sejalAS-1510}{GitHub}
+\\[2pt]
+
+\href{https://sejalshinkar.vercel.app/}{Portfolio}
+\;|\;
+\href{https://www.codechef.com/users/sejalshinkar15}{CodeChef}
+\;|\;
+\href{https://leetcode.com/sejal_shinkar}{LeetCode}
+\;|\;
+\href{https://auth.geeksforgeeks.org/user/sejalshinkar15}{GFG}
+\end{center}
+
+\vspace{-8pt}
+
+\section{Education}
+
+\textbf{B.Tech in Information Technology} (Pre-Final Year) \hfill 2024 -- 2028 \\
+Pune Institute of Computer Technology (PICT) \hfill CGPA: 9.42 \\
+Activities: Web Head, PCSB Club
+
+\vspace{1pt}
+
+\textbf{Higher Secondary Certificate (HSC)} \hfill 2024 \\
+MRMV Junior College of Science, Manmad \hfill Percentage: 95.00\%
+
+
+\section{Technical Skills}
+
+\textbf{AI/ML \& GenAI:} Generative AI, LLMs, RAG Pipelines, AI Agents, Multi-Agent Systems, Prompt Engineering, Fine-tuning, NLP, Deep Learning, PyTorch, TensorFlow, LangChain, Hugging Face, Gemini API, Ollama (Mistral), Vector Databases (ChromaDB), LLM Evaluation \& Hallucination Detection, Responsible AI, MLOps \\
+\textbf{Data Science \& ML:} scikit-learn, Pandas, NumPy, Matplotlib, Statistics, XGBoost, SHAP, Model Evaluation Metrics, Anomaly Detection \\
+\textbf{Full Stack \& APIs:} .NET, Microservices, React.js, Next.js, Node.js, Express.js, FastAPI, REST API Design, API Integration, JWT Authentication, RBAC, Tailwind CSS, HTML5, CSS3 \\
+\textbf{Cloud \& DevOps:} Azure (App Service, Functions, Blob Storage, AKS, Azure DevOps, Azure SQL, Entra ID), AWS (EC2, S3, Lambda, IAM, RDS), GCP, Terraform (IaC), Docker, Kubernetes, CI/CD (GitHub Actions, Jenkins), Prometheus, Grafana, Cloud Networking (VPC), Linux, Git, Vercel, Render \\
+\textbf{Languages, Databases \& Testing:} Python, Java, C\#, JavaScript, TypeScript, C, C++, SQL, PostgreSQL, MySQL, MongoDB, SQLite, Schema Design, Indexing, Data Pipelines, Pytest, Vitest, Playwright, Postman \\
+\textbf{Core Concepts:} DSA, OOP, DBMS, Operating Systems, Computer Networks, System Design, Agile/Scrum
+
+
+\section{Experience}
+
+\textbf{Artificial Intelligence Intern -- Infosys Springboard (Virtual)}
+(\href{https://llm-response-evaluation-platform.onrender.com}{Live} | \href{https://github.com/sejalAS-1510/llm-response-eval-framework}{GitHub})
+\hfill Aug 2026 -- Oct 2026
+\begin{itemize}
+\item Worked in an agile workflow with regular stand-up meetings and milestone-based delivery to build and deploy an end-to-end AI-powered LLM Response Evaluation Platform, where four parallel judge agents (\texttt{asyncio.gather}) audit AI responses for relevance, accuracy, completeness, and hallucination using claim-level checks, a RAG fallback (LangChain document chunking), and a weighted verdict model with deterministic overrides (responsible AI).
+\item Delivered a scalable, cloud-native FastAPI batch pipeline (API integration) for 100+ CSV records with fault isolation, quality-drift monitoring, and PDF audit reports, containerized with Docker and deployed on Render, validated by 86 pytest tests (100\% passing); presented progress at milestone reviews and owned it from design to deployment.
+\end{itemize}
+
+\vspace{1pt}
+
+\textbf{Product Intern -- Technology, TPOBridge (Remote)} \hfill Mar 2026 -- Jul 2026
+\begin{itemize}
+\item Contributed to feature development and enhancements on two live platforms, \textbf{TPOBridge} and \textbf{PlacementEdge}, collaborating with developers to implement, debug, and ship improvements in an agile environment.
+\item Tested user flows across browsers and screen sizes; documented and tracked bugs to resolution, and communicated UX feedback clearly to Product and Technology teams, taking ownership until closure.
+\end{itemize}
+
+
+\section{Projects}
+
+\textbf{Full Stack Developer -- CiviQ (Citizen Issue Management Platform)}
+(\href{https://civiqproject.vercel.app/}{Live} | \href{https://github.com/sejalAS-1510/CiviQ-Project}{GitHub})
+\hfill Feb 2026 -- Jun 2026
+\begin{itemize}
+\item Architected and deployed a scalable, cloud-hosted multi-tenant MERN complaint management system; developed 31 REST APIs secured with custom JWT authentication and RBAC, achieving 98ms average response time via indexed compound Mongoose queries.
+\item Designed a weighted technician assignment algorithm to automate complaint routing, and built an auto-failover notification integration (Brevo to SendGrid) with 100\% success rate under stress testing; validated with 92\% test coverage (Vitest, Playwright).
+\end{itemize}
+
+\vspace{1pt}
+
+\textbf{Core Technical Contributor -- SCRIBE AML (SAR Narrative Generator)} \hfill Barclays Hack-O-Hire 2026 \\
+\textit{National-Level Hackathon Participant}
+\begin{itemize}
+\item Collaborated in a 5-member team to build an explainable, audit-ready AI solution that generates Suspicious Activity Reports: XGBoost anomaly scoring with SHAP explainability grounds every narrative in the model's reasoning, with a built-in audit trail (governance); ran an open-weight Mistral LLM locally via Ollama so sensitive financial data never left the device (privacy, security); built REST APIs with FastAPI and Express and a React frontend.
+\end{itemize}
+
+\vspace{1pt}
+
+\textbf{Full-Stack Developer -- ManoSakha (Digital Psychological Support Assistant)} \hfill TechFiesta 2026 \\
+\textit{International Hackathon}
+\begin{itemize}
+\item Built an AI assistant for mental health counseling on a 5-member team with an offline, locally-hosted Ollama LLM, responsive frontend screens, and an Express.js/MongoDB backend so sensitive conversations never left the device (privacy).
+\end{itemize}
+
+\vspace{1pt}
+
+\textbf{Additional Projects}
+\begin{itemize}
+\item \textbf{Nxt2Campus} (\href{https://nxt2campus.onrender.com/}{Live} | \href{https://github.com/sejalAS-1510/college-eligibility}{GitHub}): MHT-CET college predictor with a percentile/cutoff model across 10 colleges.
+\item \textbf{EquiTrack} (\href{https://equitrack-sepia.vercel.app/}{Live} | \href{https://github.com/sejalAS-1510/Equitrack}{GitHub}): real-time stock dashboard using live market data APIs with auto-refresh.
+\end{itemize}
+
+
+\section{Achievements \& Hackathons}
+
+\begin{itemize}
+\item Secured \textbf{Rank 176} in \textbf{ICPC AlgoQueen Quest}.
+\item Cleared the college-level internal round of \textbf{Smart India Hackathon 2025} (K-INDS, metro planning) and \textbf{Smart India Hackathon 2026} (Pramaan: legal metrology verification platform).
+\item Solving \textbf{240+ problems} on LeetCode with daily practice (\textbf{50-day, 100-day streak and monthly badges}).
+\item Built \textbf{EcoTrace}, a carbon footprint awareness platform, at \textbf{Hack2Skill Prompt Wars Challenge 3}.
+\end{itemize}
+
+
+\section{Certifications}
+
+\begin{itemize}
+\item \textbf{Principles of Generative AI}, \textbf{AWS Cloud Fundamentals}, \textbf{Architecting Cloud Computing Solutions on Microsoft Azure} -- Infosys Springboard
+\item \textbf{CodeChef Problem Solving Certification} (500 Difficulty Level)
+\end{itemize}
+
+\end{document}
